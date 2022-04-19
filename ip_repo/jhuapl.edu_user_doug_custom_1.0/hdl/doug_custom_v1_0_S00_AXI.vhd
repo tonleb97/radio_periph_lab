@@ -16,7 +16,8 @@ entity doug_custom_v1_0_S00_AXI is
 	);
 	port (
 		-- Users to add ports here
-
+        data_valid_out : out std_logic;
+        data_out : out std_logic_vector(31 downto 0);
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -85,6 +86,18 @@ end doug_custom_v1_0_S00_AXI;
 
 architecture arch_imp of doug_custom_v1_0_S00_AXI is
 
+    COMPONENT radio_subIP_0
+      PORT (
+        sysclk : IN STD_LOGIC;
+        dds_reset : IN STD_LOGIC;
+        tuner_phase : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+        dds_phase : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+        s_axis_phase_tvalid_0 : IN STD_LOGIC;
+        data_valid_out : OUT STD_LOGIC;
+        data_out : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+      );
+    END COMPONENT;
+    
 	-- AXI4LITE signals
 	signal axi_awaddr	: std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
 	signal axi_awready	: std_logic;
@@ -118,6 +131,8 @@ architecture arch_imp of doug_custom_v1_0_S00_AXI is
 	signal byte_index	: integer;
 	signal aw_en	: std_logic;
 	signal ctr32 : unsigned(31 downto 0);
+	signal dds_reset, sysclk : std_logic;
+	signal tuner_phase, dds_phase : std_logic_vector(31 downto 0);
 
 begin
 	-- I/O Connections assignments
@@ -134,7 +149,9 @@ begin
 	-- axi_awready is asserted for one S_AXI_ACLK clock cycle when both
 	-- S_AXI_AWVALID and S_AXI_WVALID are asserted. axi_awready is
 	-- de-asserted when reset is low.
-
+	
+    sysclk <= S_AXI_ACLK;
+    
 	process (S_AXI_ACLK)
 	begin
 	  if rising_edge(S_AXI_ACLK) then 
@@ -252,7 +269,7 @@ begin
 	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
 	                -- Respective byte enables are asserted as per write strobes                   
 	                -- slave registor 3
-	                slv_reg3(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
+	                -- slv_reg3(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
 	              end if;
 	            end loop;
 	          when others =>
@@ -354,13 +371,13 @@ begin
 	    loc_addr := axi_araddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
 	    case loc_addr is
 	      when b"00" =>
-	        reg_data_out <= x"DEADBEEF";
+	        reg_data_out <= slv_reg0;
 	      when b"01" =>
-	        reg_data_out <= std_logic_vector(ctr32);
+	        reg_data_out <= slv_reg1;
 	      when b"10" =>
 	        reg_data_out <= slv_reg2;
 	      when b"11" =>
-	        reg_data_out <= slv_reg3;
+	        reg_data_out <= std_logic_vector(ctr32);
 	      when others =>
 	        reg_data_out  <= (others => '0');
 	    end case;
@@ -389,7 +406,20 @@ ctr32 <= ctr32+1 when rising_edge(S_AXI_ACLK);
 
 
 	-- Add user logic here
-
+	dds_phase <= slv_reg0;
+	tuner_phase <= slv_reg1;
+	dds_reset <= slv_reg2(0);
+	
+    radio_subcomponent : radio_subIP_0
+      PORT MAP (
+        sysclk => sysclk,
+        dds_reset => dds_reset,
+        tuner_phase => tuner_phase,
+        dds_phase => dds_phase,
+        s_axis_phase_tvalid_0 => '1',
+        data_valid_out => data_valid_out,
+        data_out => data_out
+      );
 	-- User logic ends
 
 end arch_imp;

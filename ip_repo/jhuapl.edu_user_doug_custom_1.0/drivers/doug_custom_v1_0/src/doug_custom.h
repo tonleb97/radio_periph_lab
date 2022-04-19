@@ -77,4 +77,8 @@
  */
 XStatus DOUG_CUSTOM_Reg_SelfTest(void * baseaddr_p);
 
+void radioTuner_setAdcFreq(u32 BaseAddr, float freq);
+void radioTuner_tuneRadio(u32 BaseAddr, float tune_freq);
+void radioTuner_controlReset(u32 BaseAddr, u8 resetval);
+
 #endif // DOUG_CUSTOM_H

@@ -16,7 +16,8 @@ entity doug_custom_v1_0 is
 	);
 	port (
 		-- Users to add ports here
-
+        data_tvalid : out std_logic;
+        data_tout : out std_logic_vector(31 downto 0);
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -55,6 +56,8 @@ architecture arch_imp of doug_custom_v1_0 is
 		C_S_AXI_ADDR_WIDTH	: integer	:= 4
 		);
 		port (
+		data_valid_out : out std_logic;
+        data_out : out std_logic_vector(31 downto 0);
 		S_AXI_ACLK	: in std_logic;
 		S_AXI_ARESETN	: in std_logic;
 		S_AXI_AWADDR	: in std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
@@ -88,6 +91,8 @@ doug_custom_v1_0_S00_AXI_inst : doug_custom_v1_0_S00_AXI
 		C_S_AXI_ADDR_WIDTH	=> C_S00_AXI_ADDR_WIDTH
 	)
 	port map (
+	   data_valid_out => data_tvalid,
+        data_out => data_tout,
 		S_AXI_ACLK	=> s00_axi_aclk,
 		S_AXI_ARESETN	=> s00_axi_aresetn,
 		S_AXI_AWADDR	=> s00_axi_awaddr,
