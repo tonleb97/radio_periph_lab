@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun May  1 17:18:59 2022
+# Process ID: 8732
+# Current directory: D:/School/sysFPGAlab/radio_periph_lab/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7272 D:\School\sysFPGAlab\radio_periph_lab\vivado\radio_periph_lab.xpr
+# Log file: D:/School/sysFPGAlab/radio_periph_lab/vivado/vivado.log
+# Journal file: D:/School/sysFPGAlab/radio_periph_lab/vivado\vivado.jou
+# Running On: MagusReborn, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 6, Host memory: 17045 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_data_fifo:2.1 axi_data_fifo_0
+endgroup
+set_property -dict [list CONFIG.WRITE_FIFO_DEPTH {512} CONFIG.READ_FIFO_DEPTH {32}] [get_bd_cells axi_data_fifo_0]
+set_property location {3 825 781} [get_bd_cells axi_data_fifo_0]
+set_property location {3 772 601} [get_bd_cells axi_data_fifo_0]
+delete_bd_objs [get_bd_cells axi_data_fifo_0]
+close_project
+create_project FIFO_IP D:/School/sysFPGAlab -part xc7z020clg400-1
+set_property board_part digilentinc.com:zybo-z7-20:part0:1.0 [current_project]
+set_property target_language VHDL [current_project]
+file mkdir D:/School/sysFPGAlab/FIFO_IP.srcs/sources_1/new
+close [ open D:/School/sysFPGAlab/FIFO_IP.srcs/sources_1/new/top_level.vhd w ]
+add_files D:/School/sysFPGAlab/FIFO_IP.srcs/sources_1/new/top_level.vhd
+update_compile_order -fileset sources_1

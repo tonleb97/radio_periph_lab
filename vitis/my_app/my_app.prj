@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="my_app" location="D:/School/sysFPGAlab/radio_periph_lab/vitis/my_app" platform="D:/School/sysFPGAlab/radio_periph_lab/vitis/hwplat/export/hwplat/hwplat.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="my_app_system" sysConfig="hwplat" runtime="C/C++" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="8aeaee22110456d7973d6b06c38af578">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.513891577">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.884276944" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

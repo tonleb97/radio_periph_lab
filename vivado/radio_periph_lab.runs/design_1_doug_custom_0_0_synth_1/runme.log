@@ -1,0 +1,873 @@
+
+*** Running vivado
+    with args -log design_1_doug_custom_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_doug_custom_0_0.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_doug_custom_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1263.051 ; gain = 532.363
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/School/sysFPGAlab/radio_periph_lab/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top design_1_doug_custom_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6392
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1263.051 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_doug_custom_0_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/synth/design_1_doug_custom_0_0.vhd:84]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'doug_custom_v1_0' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/d0a8/hdl/doug_custom_v1_0.vhd:5' bound to instance 'U0' of component 'doug_custom_v1_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/synth/design_1_doug_custom_0_0.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'doug_custom_v1_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/d0a8/hdl/doug_custom_v1_0.vhd:50]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'doug_custom_v1_0_S00_AXI' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/d0a8/hdl/doug_custom_v1_0_S00_AXI.vhd:5' bound to instance 'doug_custom_v1_0_S00_AXI_inst' of component 'doug_custom_v1_0_S00_AXI' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/d0a8/hdl/doug_custom_v1_0.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'doug_custom_v1_0_S00_AXI' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/d0a8/hdl/doug_custom_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-226] default block is never used [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/d0a8/hdl/doug_custom_v1_0_S00_AXI.vhd:242]
+INFO: [Synth 8-226] default block is never used [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/d0a8/hdl/doug_custom_v1_0_S00_AXI.vhd:372]
+WARNING: [Synth 8-614] signal 'ctr32' is read in the process but is not in the sensitivity list [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/d0a8/hdl/doug_custom_v1_0_S00_AXI.vhd:367]
+INFO: [Synth 8-3491] module 'radio_subIP_0' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/synth/radio_subIP_0.vhd:56' bound to instance 'radio_subcomponent' of component 'radio_subIP_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/d0a8/hdl/doug_custom_v1_0_S00_AXI.vhd:413]
+INFO: [Synth 8-638] synthesizing module 'radio_subIP_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/synth/radio_subIP_0.vhd:68]
+INFO: [Synth 8-3491] module 'radio_subIP' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/lab3_toplevel.vhd:10' bound to instance 'U0' of component 'radio_subIP' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/synth/radio_subIP_0.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'radio_subIP' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/lab3_toplevel.vhd:22]
+INFO: [Synth 8-3491] module 'design_1' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:14' bound to instance 'design_1_i' of component 'design_1' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/lab3_toplevel.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'design_1' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:32]
+INFO: [Synth 8-3491] module 'design_1_cmpy_0_0' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_cmpy_0_0/synth/design_1_cmpy_0_0.vhd:59' bound to instance 'cmpy_0' of component 'design_1_cmpy_0_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'design_1_cmpy_0_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_cmpy_0_0/synth/design_1_cmpy_0_0.vhd:70]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICE bound to: xc7z020 - type: string 
+	Parameter C_A_WIDTH bound to: 16 - type: integer 
+	Parameter C_B_WIDTH bound to: 16 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 16 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter HAS_NEGATE bound to: 0 - type: integer 
+	Parameter SINGLE_OUTPUT bound to: 0 - type: integer 
+	Parameter ROUND bound to: 0 - type: integer 
+	Parameter USE_DSP_CASCADES bound to: 1 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_CTRL_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_CTRL_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_S_AXIS_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_CTRL_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXIS_CTRL_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_DOUT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_DOUT_TUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'cmpy_v6_0_20' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/328f/hdl/cmpy_v6_0_vh_rfs.vhd:13915' bound to instance 'U0' of component 'cmpy_v6_0_20' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_cmpy_0_0/synth/design_1_cmpy_0_0.vhd:157]
+WARNING: [Synth 8-5858] RAM adel30_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM bdel_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM sub_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'design_1_cmpy_0_0' (8#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_cmpy_0_0/synth/design_1_cmpy_0_0.vhd:70]
+INFO: [Synth 8-3491] module 'design_1_dds_compiler_0_0' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_0_0/synth/design_1_dds_compiler_0_0.vhd:59' bound to instance 'dds_compiler' of component 'design_1_dds_compiler_0_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'design_1_dds_compiler_0_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_0_0/synth/design_1_dds_compiler_0_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_0_0/synth/design_1_dds_compiler_0_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_0_0/synth/design_1_dds_compiler_0_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_0_0/synth/design_1_dds_compiler_0_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_0_0/synth/design_1_dds_compiler_0_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_0_0/synth/design_1_dds_compiler_0_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_0_0/synth/design_1_dds_compiler_0_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_0_0/synth/design_1_dds_compiler_0_0.vhd:73]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
+	Parameter C_MODULUS bound to: 9 - type: integer 
+	Parameter C_ACCUMULATOR_WIDTH bound to: 27 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_HAS_PHASE_OUT bound to: 0 - type: integer 
+	Parameter C_HAS_PHASEGEN bound to: 1 - type: integer 
+	Parameter C_HAS_SINCOS bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 8 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_NEGATIVE_COSINE bound to: 0 - type: integer 
+	Parameter C_NEGATIVE_SINE bound to: 0 - type: integer 
+	Parameter C_NOISE_SHAPING bound to: 2 - type: integer 
+	Parameter C_OUTPUTS_REQUIRED bound to: 0 - type: integer 
+	Parameter C_OUTPUT_FORM bound to: 0 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 16 - type: integer 
+	Parameter C_PHASE_ANGLE_WIDTH bound to: 11 - type: integer 
+	Parameter C_PHASE_INCREMENT bound to: 3 - type: integer 
+	Parameter C_PHASE_INCREMENT_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_RESYNC bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_OPTIMISE_GOAL bound to: 0 - type: integer 
+	Parameter C_USE_DSP48 bound to: 0 - type: integer 
+	Parameter C_POR_MODE bound to: 0 - type: integer 
+	Parameter C_AMPLITUDE bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 1 - type: integer 
+	Parameter C_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_S_PHASE bound to: 1 - type: integer 
+	Parameter C_S_PHASE_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_CONFIG bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_DATA bound to: 1 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_PHASE bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_21' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/7e37/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_21' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_0_0/synth/design_1_dds_compiler_0_0.vhd:184]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dds_compiler_0_0' (21#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_0_0/synth/design_1_dds_compiler_0_0.vhd:70]
+INFO: [Synth 8-3491] module 'design_1_dds_compiler_1' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_1/synth/design_1_dds_compiler_1.vhd:59' bound to instance 'dds_compiler1' of component 'design_1_dds_compiler_1' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:210]
+INFO: [Synth 8-638] synthesizing module 'design_1_dds_compiler_1' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_1/synth/design_1_dds_compiler_1.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_1/synth/design_1_dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_1/synth/design_1_dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_1/synth/design_1_dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_1/synth/design_1_dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_1/synth/design_1_dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_1/synth/design_1_dds_compiler_1.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_1/synth/design_1_dds_compiler_1.vhd:73]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
+	Parameter C_MODULUS bound to: 9 - type: integer 
+	Parameter C_ACCUMULATOR_WIDTH bound to: 27 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_HAS_PHASE_OUT bound to: 0 - type: integer 
+	Parameter C_HAS_PHASEGEN bound to: 1 - type: integer 
+	Parameter C_HAS_SINCOS bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 8 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_NEGATIVE_COSINE bound to: 0 - type: integer 
+	Parameter C_NEGATIVE_SINE bound to: 0 - type: integer 
+	Parameter C_NOISE_SHAPING bound to: 2 - type: integer 
+	Parameter C_OUTPUTS_REQUIRED bound to: 2 - type: integer 
+	Parameter C_OUTPUT_FORM bound to: 0 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 16 - type: integer 
+	Parameter C_PHASE_ANGLE_WIDTH bound to: 11 - type: integer 
+	Parameter C_PHASE_INCREMENT bound to: 3 - type: integer 
+	Parameter C_PHASE_INCREMENT_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_RESYNC bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_OPTIMISE_GOAL bound to: 0 - type: integer 
+	Parameter C_USE_DSP48 bound to: 0 - type: integer 
+	Parameter C_POR_MODE bound to: 0 - type: integer 
+	Parameter C_AMPLITUDE bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 1 - type: integer 
+	Parameter C_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_S_PHASE bound to: 1 - type: integer 
+	Parameter C_S_PHASE_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_CONFIG bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_DATA bound to: 1 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_PHASE bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_21' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/7e37/hdl/dds_compiler_v6_0_vh_rfs.vhd:47308' bound to instance 'U0' of component 'dds_compiler_v6_0_21' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_1/synth/design_1_dds_compiler_1.vhd:184]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dds_compiler_1' (22#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_dds_compiler_1/synth/design_1_dds_compiler_1.vhd:70]
+INFO: [Synth 8-3491] module 'design_1_fir_compiler_0_0' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_0_0/synth/design_1_fir_compiler_0_0.vhd:59' bound to instance 'fir_compiler1_left' of component 'design_1_fir_compiler_0_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'design_1_fir_compiler_0_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_0_0/synth/design_1_fir_compiler_0_0.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: design_1_fir_compiler_0_0 - type: string 
+	Parameter C_COEF_FILE bound to: design_1_fir_compiler_0_0.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 120 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 40 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 195 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 0 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 3 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 8 - type: string 
+	Parameter C_COEF_WIDTH bound to: 8 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 29 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 29 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 29 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 29 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: none - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 3 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 1 - type: integer 
+	Parameter C_INPUT_RATE bound to: 1 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 40 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 10 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 1 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_17' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/cf11/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_17' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_0_0/synth/design_1_fir_compiler_0_0.vhd:205]
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'design_1_fir_compiler_0_0' (38#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_0_0/synth/design_1_fir_compiler_0_0.vhd:70]
+INFO: [Synth 8-3491] module 'design_1_fir_compiler_0_1' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_0_1/synth/design_1_fir_compiler_0_1.vhd:59' bound to instance 'fir_compiler1_right' of component 'design_1_fir_compiler_0_1' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:228]
+INFO: [Synth 8-638] synthesizing module 'design_1_fir_compiler_0_1' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_0_1/synth/design_1_fir_compiler_0_1.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: design_1_fir_compiler_0_1 - type: string 
+	Parameter C_COEF_FILE bound to: design_1_fir_compiler_0_1.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 120 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 40 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 195 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 0 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 3 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 8 - type: string 
+	Parameter C_COEF_WIDTH bound to: 8 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 29 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 29 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 29 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 29 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: none - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 3 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 1 - type: integer 
+	Parameter C_INPUT_RATE bound to: 1 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 40 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 10 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 1 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_17' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/cf11/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_17' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_0_1/synth/design_1_fir_compiler_0_1.vhd:205]
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'design_1_fir_compiler_0_1' (39#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_0_1/synth/design_1_fir_compiler_0_1.vhd:70]
+INFO: [Synth 8-3491] module 'design_1_fir_compiler_1_0' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_1_0/synth/design_1_fir_compiler_1_0.vhd:59' bound to instance 'fir_compiler2_left' of component 'design_1_fir_compiler_1_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:237]
+INFO: [Synth 8-638] synthesizing module 'design_1_fir_compiler_1_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_1_0/synth/design_1_fir_compiler_1_0.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: design_1_fir_compiler_1_0 - type: string 
+	Parameter C_COEF_FILE bound to: design_1_fir_compiler_1_0.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 448 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 64 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 798 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 0 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 1 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 8 - type: string 
+	Parameter C_COEF_WIDTH bound to: 8 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 30 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 30 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 30 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 30 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: none - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 1 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 7 - type: integer 
+	Parameter C_INPUT_RATE bound to: 40 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 2560 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 1 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 1 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 1 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 16 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 1 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_17' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/cf11/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_17' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_1_0/synth/design_1_fir_compiler_1_0.vhd:205]
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'design_1_fir_compiler_1_0' (42#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_1_0/synth/design_1_fir_compiler_1_0.vhd:70]
+INFO: [Synth 8-3491] module 'design_1_fir_compiler_1_1' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_1_1/synth/design_1_fir_compiler_1_1.vhd:59' bound to instance 'fir_compiler2_right' of component 'design_1_fir_compiler_1_1' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'design_1_fir_compiler_1_1' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_1_1/synth/design_1_fir_compiler_1_1.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: design_1_fir_compiler_1_1 - type: string 
+	Parameter C_COEF_FILE bound to: design_1_fir_compiler_1_1.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 448 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 64 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 798 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 0 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 1 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 8 - type: string 
+	Parameter C_COEF_WIDTH bound to: 8 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 30 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 30 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 30 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 30 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: none - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 1 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 7 - type: integer 
+	Parameter C_INPUT_RATE bound to: 40 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 2560 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 1 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 1 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 1 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 16 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 1 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_17' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/cf11/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_17' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_1_1/synth/design_1_fir_compiler_1_1.vhd:205]
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'design_1_fir_compiler_1_1' (43#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_1_1/synth/design_1_fir_compiler_1_1.vhd:70]
+INFO: [Synth 8-3491] module 'design_1_xlslice_2_2' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlslice_2_2/synth/design_1_xlslice_2_2.v:57' bound to instance 'slicecomplex_imag' of component 'design_1_xlslice_2_2' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:255]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_2_2' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlslice_2_2/synth/design_1_xlslice_2_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (44#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_2_2' (45#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlslice_2_2/synth/design_1_xlslice_2_2.v:57]
+INFO: [Synth 8-3491] module 'design_1_slicecomplex_imag_0' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_slicecomplex_imag_0/synth/design_1_slicecomplex_imag_0.v:57' bound to instance 'slicecomplex_real' of component 'design_1_slicecomplex_imag_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:260]
+INFO: [Synth 8-6157] synthesizing module 'design_1_slicecomplex_imag_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_slicecomplex_imag_0/synth/design_1_slicecomplex_imag_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (45#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_slicecomplex_imag_0' (46#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_slicecomplex_imag_0/synth/design_1_slicecomplex_imag_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:265]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (47#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (48#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:271]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (49#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (50#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_0' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57' bound to instance 'xlslice_0' of component 'design_1_xlslice_0_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:275]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (50#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (51#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_1_0' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57' bound to instance 'xlslice_1' of component 'design_1_xlslice_1_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:280]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_1_0' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' (51#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_1_0' (52#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_1' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlslice_0_1/synth/design_1_xlslice_0_1.v:57' bound to instance 'xlslice_2' of component 'design_1_xlslice_0_1' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:285]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_1' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlslice_0_1/synth/design_1_xlslice_0_1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_1' (53#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlslice_0_1/synth/design_1_xlslice_0_1.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_1_1' declared at 'd:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlslice_1_1/synth/design_1_xlslice_1_1.v:57' bound to instance 'xlslice_3' of component 'design_1_xlslice_1_1' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:290]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_1_1' [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlslice_1_1/synth/design_1_xlslice_1_1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_1_1' (54#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_xlslice_1_1/synth/design_1_xlslice_1_1.v:57]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (55#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'radio_subIP' (56#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/lab3_toplevel.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'radio_subIP_0' (57#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/synth/radio_subIP_0.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/d0a8/hdl/doug_custom_v1_0_S00_AXI.vhd:238]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/d0a8/hdl/doug_custom_v1_0_S00_AXI.vhd:240]
+INFO: [Synth 8-256] done synthesizing module 'doug_custom_v1_0_S00_AXI' (58#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/d0a8/hdl/doug_custom_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'doug_custom_v1_0' (59#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ipshared/d0a8/hdl/doug_custom_v1_0.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'design_1_doug_custom_0_0' (60#1) [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/synth/design_1_doug_custom_0_0.vhd:84]
+WARNING: [Synth 8-7129] Port Din[31] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[30] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[29] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[12] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[11] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[31] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[30] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[29] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[28] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[11] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:34 ; elapsed = 00:00:49 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.335 . Memory (MB): peak = 1655.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler1_left/U0'
+Finished Parsing XDC File [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler1_left/U0'
+Parsing XDC File [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_0_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler1_right/U0'
+Finished Parsing XDC File [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_0_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler1_right/U0'
+Parsing XDC File [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_1_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_left/U0'
+Finished Parsing XDC File [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_1_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_left/U0'
+Parsing XDC File [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_1_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_right/U0'
+Finished Parsing XDC File [d:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_doug_custom_0_0/src/radio_subIP_0_1/src/design_1_fir_compiler_1_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_right/U0'
+Parsing XDC File [D:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_doug_custom_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_doug_custom_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_doug_custom_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_doug_custom_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_doug_custom_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1655.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.285 . Memory (MB): peak = 1655.754 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:01:04 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:01:04 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_right/U0. (constraint file  D:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_doug_custom_0_0_synth_1/dont_touch.xdc, line 56).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_left/U0. (constraint file  D:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_doug_custom_0_0_synth_1/dont_touch.xdc, line 59).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler1_right/U0. (constraint file  D:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_doug_custom_0_0_synth_1/dont_touch.xdc, line 62).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler1_left/U0. (constraint file  D:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_doug_custom_0_0_synth_1/dont_touch.xdc, line 65).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/cmpy_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/dds_compiler. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/dds_compiler1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler1_left. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler1_right. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_left. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_right. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/slicecomplex_imag. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/slicecomplex_real. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/xlslice_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/xlslice_3. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:01:04 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal "dpt_mem:/gen_bram.gen_write_first.gen_double_reg.ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:50 ; elapsed = 00:01:06 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_left/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[0].g_others.i_delay' (delay__parameterized29) to 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_left/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[1].g_others.i_delay'
+INFO: [Synth 8-223] decloning instance 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_left/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[4].g_others.i_delay' (delay__parameterized31) to 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_left/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[5].g_others.i_delay'
+INFO: [Synth 8-223] decloning instance 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_right/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[0].g_others.i_delay' (delay__parameterized29) to 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_right/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[1].g_others.i_delay'
+INFO: [Synth 8-223] decloning instance 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_right/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[4].g_others.i_delay' (delay__parameterized31) to 'U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent/U0/design_1_i/fir_compiler2_right/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[5].g_others.i_delay'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3971] The signal "\U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent /\U0/design_1_i/fir_compiler2_left /U0/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem/gen_bram.gen_write_first.gen_double_reg.ram_reg " was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "\U0/doug_custom_v1_0_S00_AXI_inst/radio_subcomponent /\U0/design_1_i/fir_compiler2_right /U0/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem/gen_bram.gen_write_first.gen_double_reg.ram_reg " was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:11 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:21 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:22 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:01:23 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:01:28 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:01:28 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:28 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:28 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:28 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:28 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    34|
+|2     |DSP48E1   |    19|
+|6     |LUT1      |    26|
+|7     |LUT2      |   152|
+|8     |LUT3      |    79|
+|9     |LUT4      |   122|
+|10    |LUT5      |    40|
+|11    |LUT6      |   124|
+|12    |RAM128X1D |    64|
+|13    |RAMB18E1  |     6|
+|16    |SRL16E    |   166|
+|17    |SRLC32E   |   320|
+|18    |FDRE      |  1576|
+|19    |FDSE      |    29|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:28 . Memory (MB): peak = 1655.754 ; gain = 392.703
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 293 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:01:19 . Memory (MB): peak = 1655.754 ; gain = 392.703
+Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:28 . Memory (MB): peak = 1655.754 ; gain = 392.703
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1655.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 123 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1655.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 64 instances
+
+Synth Design complete, checksum: 85993a0c
+INFO: [Common 17-83] Releasing license: Synthesis
+111 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:36 . Memory (MB): peak = 1655.754 ; gain = 392.703
+INFO: [Common 17-1381] The checkpoint 'D:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_doug_custom_0_0_synth_1/design_1_doug_custom_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_doug_custom_0_0, cache-ID = 0c4d8d6d0ebe0078
+INFO: [Coretcl 2-1174] Renamed 221 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/School/sysFPGAlab/radio_periph_lab/vivado/radio_periph_lab.runs/design_1_doug_custom_0_0_synth_1/design_1_doug_custom_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_doug_custom_0_0_utilization_synth.rpt -pb design_1_doug_custom_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 20 06:45:44 2022...
